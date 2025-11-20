@@ -1,15 +1,15 @@
 # ios_sip_client
 
-以 SwiftUI 建立的簡易 SIP 客戶端範例，支援 UDP/TCP 登入、撥號與來電流程，以及聯絡人與外觀設定。
+A SwiftUI-based SIP client that can register to a real SIP server using the PJSIP stack.
 
-## 功能
-- 以 UDP 或 TCP 登入 SIP 帳號，並可管理顯示名稱、帳號、密碼與 Domain。
-- 三個主要分頁：
-  - **通話紀錄**：顯示去電、來電與未接來電。
-  - **聯絡人**：新增 / 編輯 / 刪除聯絡人，點擊即可撥號。
-  - **撥號鍵盤**：輸入號碼並送出 INVITE，跳出撥號中畫面。
-- 收到 INVITE 時顯示來電畫面，可接聽或拒接。
-- 左上角 Drawer 列出帳號資訊，並可進入帳號設定、一般設定與 About（版號顯示）。
-- 設定頁可切換 Light / Dark / 跟隨系統外觀，與語系（目前預留繁體中文，並保留擴充架構）。
+## Features
+- Enter SIP credentials (username, password, domain) and choose UDP/TCP/TLS transport.
+- Register and disconnect against a live SIP registrar.
+- Simple status UI for registration feedback.
 
-此專案使用模擬的 SIP 服務邏輯，方便快速驗證 UI 流程與狀態管理。
+## Getting started
+1. Add PJSIP to the Xcode project (CocoaPods or XCFrameworks) and expose `pjsua` headers in a bridging header.
+2. Open the project and run the `SipClientApp` target on a device or simulator.
+3. Enter your SIP account details and tap **Register**.
+
+See [`docs/REAL_SIP_CLIENT.md`](docs/REAL_SIP_CLIENT.md) for detailed setup instructions and extension points for calls, audio routing, and NAT traversal.
