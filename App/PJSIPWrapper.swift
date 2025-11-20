@@ -1,8 +1,7 @@
 import Foundation
 
-/// Thin Swift wrapper around PJSUA. It assumes you have linked the PJSIP
-/// frameworks via CocoaPods, Carthage or Swift Package Manager and exposed the
-/// pjsua headers in a bridging header.
+// MARK: - PJSIP-backed implementation (compiled only when USE_PJSIP is defined)
+#if USE_PJSIP
 final class PJSIPWrapper {
     static let shared = PJSIPWrapper()
 
@@ -56,7 +55,10 @@ final class PJSIPWrapper {
         }
 
         if let stunServer {
-            stunServer.absoluteString.withCString { accCfg.stun_srv_cnt = 1; accCfg.stun_srv = [pj_str(UnsafeMutablePointer(mutating: $0))] }
+            stunServer.absoluteString.withCString {
+                accCfg.stun_srv_cnt = 1
+                accCfg.stun_srv = [pj_str(UnsafeMutablePointer(mutating: $0))]
+            }
         }
 
         var creds = pjsip_cred_info()
@@ -88,15 +90,48 @@ final class PJSIPWrapper {
 
     private func pjsuaCheck(status: pj_status_t) throws {
         if status != PJ_SUCCESS {
-            throw SipError.pjsipFailure(status)
+            throw SipError.pjsipFailure(Int32(status))
         }
     }
 }
+#else
+// MARK: - Stub implementation (default)
+/// Provides a no-op PJSIP wrapper so the app builds out of the box without linking PJSIP.
+/// Define `USE_PJSIP` in **Other Swift Flags** once the SDK and bridging header are configured.
+final class PJSIPWrapper {
+    static let shared = PJSIPWrapper()
+
+    private var isInitialized = false
+    private var accountId: Int32 = -1
+
+    func bootstrap(transport: SipTransport) throws {
+        isInitialized = true
+        accountId = 1
+        #if DEBUG
+        print("PJSIP stub bootstrap invoked for transport: \(transport.description)")
+        #endif
+    }
+
+    func registerAccount(credentials: SipCredentials, stunServer: URL?) throws {
+        guard isInitialized else { throw SipError.notBootstrapped }
+        #if DEBUG
+        print("PJSIP stub registering user: \(credentials.username)@\(credentials.domain) (STUN: \(stunServer?.absoluteString ?? "none"))")
+        #endif
+    }
+
+    func shutdown() {
+        #if DEBUG
+        print("PJSIP stub shutdown invoked")
+        #endif
+        isInitialized = false
+        accountId = -1
+    }
+}
+#endif
 
 // MARK: - Errors
-
 enum SipError: LocalizedError {
-    case pjsipFailure(pj_status_t)
+    case pjsipFailure(Int32)
     case notBootstrapped
 
     var errorDescription: String? {
