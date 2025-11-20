@@ -1,0 +1,285 @@
+// !$*UTF8*$!
+{
+archiveVersion = 1;
+classes = {};
+objectVersion = 56;
+objects = {
+
+/* Begin PBXBuildFile section */
+E001CF0A2C2E5A6100A7C2D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E001CF032C2E5A6100A7C2D8 /* ContentView.swift */; };
+E001CF0B2C2E5A6100A7C2D8 /* PJSIPWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E001CF042C2E5A6100A7C2D8 /* PJSIPWrapper.swift */; };
+E001CF0C2C2E5A6100A7C2D8 /* SipClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E001CF052C2E5A6100A7C2D8 /* SipClientApp.swift */; };
+E001CF0D2C2E5A6100A7C2D8 /* SipConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E001CF062C2E5A6100A7C2D8 /* SipConfiguration.swift */; };
+E001CF0E2C2E5A6100A7C2D8 /* SipManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E001CF072C2E5A6100A7C2D8 /* SipManager.swift */; };
+E001CF152C2E5C0F00A7C2D8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E001CF142C2E5C0F00A7C2D8 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+E001CF032C2E5A6100A7C2D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+E001CF042C2E5A6100A7C2D8 /* PJSIPWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJSIPWrapper.swift; sourceTree = "<group>"; };
+E001CF052C2E5A6100A7C2D8 /* SipClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SipClientApp.swift; sourceTree = "<group>"; };
+E001CF062C2E5A6100A7C2D8 /* SipConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SipConfiguration.swift; sourceTree = "<group>"; };
+E001CF072C2E5A6100A7C2D8 /* SipManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SipManager.swift; sourceTree = "<group>"; };
+E001CF092C2E5A6100A7C2D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+E001CF112C2E5B6E00A7C2D8 /* ios_sip_client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_sip_client.app; sourceTree = BUILT_PRODUCTS_DIR; };
+E001CF142C2E5C0F00A7C2D8 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+E001CEFE2C2E5A2600A7C2D8 /* Frameworks */ = {
+isa = PBXFrameworksBuildPhase;
+buildActionMask = 2147483647;
+files = (
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+E001CEF82C2E5A2600A7C2D8 = {
+isa = PBXGroup;
+children = (
+E001CF122C2E5B6E00A7C2D8 /* Products */,
+E001CF162C2E5C2B00A7C2D8 /* Resources */,
+E001CF082C2E5A6100A7C2D8 /* App */
+);
+sourceTree = "<group>";
+};
+E001CF082C2E5A6100A7C2D8 /* App */ = {
+isa = PBXGroup;
+children = (
+E001CF032C2E5A6100A7C2D8 /* ContentView.swift */,
+E001CF042C2E5A6100A7C2D8 /* PJSIPWrapper.swift */,
+E001CF052C2E5A6100A7C2D8 /* SipClientApp.swift */,
+E001CF062C2E5A6100A7C2D8 /* SipConfiguration.swift */,
+E001CF072C2E5A6100A7C2D8 /* SipManager.swift */,
+E001CF092C2E5A6100A7C2D8 /* Info.plist */
+);
+path = App;
+sourceTree = "<group>";
+};
+E001CF122C2E5B6E00A7C2D8 /* Products */ = {
+isa = PBXGroup;
+children = (
+E001CF112C2E5B6E00A7C2D8 /* ios_sip_client.app */,
+);
+name = Products;
+sourceTree = "<group>";
+};
+E001CF162C2E5C2B00A7C2D8 /* Resources */ = {
+isa = PBXGroup;
+children = (
+E001CF142C2E5C0F00A7C2D8 /* Localizable.strings */,
+);
+path = Resources;
+sourceTree = "<group>";
+};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+E001CEFD2C2E5A2600A7C2D8 /* ios_sip_client */ = {
+isa = PBXNativeTarget;
+buildConfigurationList = E001CF0F2C2E5A9100A7C2D8 /* Build configuration list for PBXNativeTarget "ios_sip_client" */;
+buildPhases = (
+E001CEFA2C2E5A2600A7C2D8 /* Sources */,
+E001CEFB2C2E5A2600A7C2D8 /* Frameworks */,
+E001CEFC2C2E5A2600A7C2D8 /* Resources */,
+);
+buildRules = (
+);
+dependencies = (
+);
+name = ios_sip_client;
+productName = ios_sip_client;
+productReference = E001CF112C2E5B6E00A7C2D8 /* ios_sip_client.app */;
+productType = "com.apple.product-type.application";
+};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+E001CEF92C2E5A2600A7C2D8 /* Project object */ = {
+isa = PBXProject;
+attributes = {
+BuildIndependentTargetsInParallel = 1;
+LastSwiftUpdateCheck = 1530;
+LastUpgradeCheck = 1530;
+TargetAttributes = {
+E001CEFD2C2E5A2600A7C2D8 = {
+CreatedOnToolsVersion = 15.3;
+LastSwiftMigration = 1530;
+};
+};
+};
+buildConfigurationList = E001CEFC2C2E5A7500A7C2D8 /* Build configuration list for PBXProject "ios_sip_client" */;
+compatibilityVersion = "Xcode 14.0";
+developmentRegion = en;
+hasScannedForEncodings = 0;
+knownRegions = (
+en,
+);
+mainGroup = E001CEF82C2E5A2600A7C2D8;
+productRefGroup = E001CF122C2E5B6E00A7C2D8 /* Products */;
+projectDirPath = "";
+projectRoot = "";
+targets = (
+E001CEFD2C2E5A2600A7C2D8 /* ios_sip_client */,
+);
+};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+E001CEFC2C2E5A2600A7C2D8 /* Resources */ = {
+isa = PBXResourcesBuildPhase;
+buildActionMask = 2147483647;
+files = (
+E001CF152C2E5C0F00A7C2D8 /* Localizable.strings in Resources */,
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+E001CEFA2C2E5A2600A7C2D8 /* Sources */ = {
+isa = PBXSourcesBuildPhase;
+buildActionMask = 2147483647;
+files = (
+E001CF0A2C2E5A6100A7C2D8 /* ContentView.swift in Sources */,
+E001CF0B2C2E5A6100A7C2D8 /* PJSIPWrapper.swift in Sources */,
+E001CF0C2C2E5A6100A7C2D8 /* SipClientApp.swift in Sources */,
+E001CF0D2C2E5A6100A7C2D8 /* SipConfiguration.swift in Sources */,
+E001CF0E2C2E5A6100A7C2D8 /* SipManager.swift in Sources */,
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+E001CEFF2C2E5A9100A7C2D8 /* Debug */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ALWAYS_SEARCH_USER_PATHS = NO;
+CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+CLANG_ANALYZER_NONNULL = YES;
+CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+CLANG_ENABLE_OBJC_ARC = YES;
+CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+CODE_SIGN_IDENTITY = "";
+COPY_PHASE_STRIP = NO;
+DEVELOPMENT_TEAM = "";
+ENABLE_STRICT_OBJC_MSGSEND = YES;
+ENABLE_TESTABILITY = YES;
+GCC_C_LANGUAGE_STANDARD = gnu17;
+GCC_NO_COMMON_BLOCKS = YES;
+INFOPLIST_FILE = App/Info.plist;
+IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+MTL_FAST_MATH = YES;
+PRODUCT_BUNDLE_IDENTIFIER = com.example.iossipclient;
+PRODUCT_NAME = "$(TARGET_NAME)";
+SDKROOT = iphoneos;
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+SWIFT_EMIT_LOC_STRINGS = YES;
+SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+SWIFT_VERSION = 5.0;
+TARGETED_DEVICE_FAMILY = "1,2";
+};
+name = Debug;
+};
+E001CF002C2E5A9100A7C2D8 /* Release */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ALWAYS_SEARCH_USER_PATHS = NO;
+CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+CLANG_ANALYZER_NONNULL = YES;
+CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+CLANG_ENABLE_OBJC_ARC = YES;
+CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+CODE_SIGN_IDENTITY = "";
+COPY_PHASE_STRIP = NO;
+DEVELOPMENT_TEAM = "";
+ENABLE_NS_ASSERTIONS = NO;
+ENABLE_STRICT_OBJC_MSGSEND = YES;
+GCC_C_LANGUAGE_STANDARD = gnu17;
+GCC_NO_COMMON_BLOCKS = YES;
+INFOPLIST_FILE = App/Info.plist;
+IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+MTL_FAST_MATH = YES;
+PRODUCT_BUNDLE_IDENTIFIER = com.example.iossipclient;
+PRODUCT_NAME = "$(TARGET_NAME)";
+SDKROOT = iphoneos;
+SWIFT_COMPILATION_MODE = wholemodule;
+SWIFT_EMIT_LOC_STRINGS = YES;
+SWIFT_OPTIMIZATION_LEVEL = "-O";
+SWIFT_VERSION = 5.0;
+TARGETED_DEVICE_FAMILY = "1,2";
+};
+name = Release;
+};
+E001CF102C2E5A9100A7C2D8 /* Debug */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+APPLICATION_EXTENSION_API_ONLY = NO;
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+CODE_SIGN_STYLE = Automatic;
+CURRENT_PROJECT_VERSION = 1;
+DEVELOPMENT_TEAM = "";
+GENERATE_INFOPLIST_FILE = NO;
+INFOPLIST_FILE = App/Info.plist;
+IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+PRODUCT_BUNDLE_IDENTIFIER = com.example.iossipclient;
+PRODUCT_NAME = "$(TARGET_NAME)";
+SWIFT_VERSION = 5.0;
+TARGETED_DEVICE_FAMILY = "1,2";
+};
+name = Debug;
+};
+E001CF112C2E5A9100A7C2D8 /* Release */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+APPLICATION_EXTENSION_API_ONLY = NO;
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+CODE_SIGN_STYLE = Automatic;
+CURRENT_PROJECT_VERSION = 1;
+DEVELOPMENT_TEAM = "";
+GENERATE_INFOPLIST_FILE = NO;
+INFOPLIST_FILE = App/Info.plist;
+IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+PRODUCT_BUNDLE_IDENTIFIER = com.example.iossipclient;
+PRODUCT_NAME = "$(TARGET_NAME)";
+SWIFT_VERSION = 5.0;
+TARGETED_DEVICE_FAMILY = "1,2";
+};
+name = Release;
+};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+E001CEFC2C2E5A7500A7C2D8 /* Build configuration list for PBXProject "ios_sip_client" */ = {
+isa = XCConfigurationList;
+buildConfigurations = (
+E001CEFF2C2E5A9100A7C2D8 /* Debug */,
+E001CF002C2E5A9100A7C2D8 /* Release */,
+);
+defaultConfigurationIsVisible = 0;
+defaultConfigurationName = Release;
+};
+E001CF0F2C2E5A9100A7C2D8 /* Build configuration list for PBXNativeTarget "ios_sip_client" */ = {
+isa = XCConfigurationList;
+buildConfigurations = (
+E001CF102C2E5A9100A7C2D8 /* Debug */,
+E001CF112C2E5A9100A7C2D8 /* Release */,
+);
+defaultConfigurationIsVisible = 0;
+defaultConfigurationName = Release;
+};
+/* End XCConfigurationList section */
+
+};
+rootObject = E001CEF92C2E5A2600A7C2D8 /* Project object */;
+}
