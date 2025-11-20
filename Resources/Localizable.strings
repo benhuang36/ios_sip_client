@@ -1,0 +1,50 @@
+"app_name" = "SIP 客戶端";
+"drawer_title" = "帳號資訊";
+"account_settings" = "帳號設定";
+"settings" = "設定";
+"about" = "About 顯示版號";
+"version" = "版本";
+"confirm" = "確認";
+"cancel" = "取消";
+"save" = "儲存";
+"delete" = "刪除";
+"edit" = "編輯";
+"add" = "新增";
+"dialing" = "撥號中";
+"call" = "通話";
+"answer" = "接聽";
+"decline" = "拒絕";
+"no_data" = "沒有資料";
+
+"tab_history" = "通話紀錄";
+"tab_contacts" = "聯絡人";
+"tab_keypad" = "撥號鍵盤";
+
+"incoming_call" = "來電";
+"outgoing_call" = "去電";
+"missed_call" = "未接來電";
+
+"contacts_title" = "聯絡人";
+"contacts_name_placeholder" = "姓名";
+"contacts_number_placeholder" = "電話號碼";
+
+"dialpad_placeholder" = "輸入電話號碼";
+"dialpad_call_action" = "撥號";
+
+"settings_title" = "設定";
+"settings_theme" = "外觀模式";
+"settings_appearance_system" = "跟隨系統";
+"settings_appearance_light" = "淺色";
+"settings_appearance_dark" = "深色";
+"settings_language" = "語系";
+
+"account_title" = "帳號設定";
+"account_display_name" = "顯示名稱";
+"account_username" = "帳號";
+"account_password" = "密碼";
+"account_domain" = "Domain";
+"account_protocol_tcp" = "TCP";
+"account_protocol_udp" = "UDP";
+"account_transport" = "傳輸協定";
+"account_login" = "登入";
+"account_logout" = "登出";
