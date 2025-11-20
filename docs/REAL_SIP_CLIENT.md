@@ -11,7 +11,7 @@ The SwiftUI views and SIP wrapper in this repository are configured to talk to a
 
 ## Integrating PJSIP
 1. Add the libraries to your project using one of:
-   - CocoaPods with `pod 'PJSIP', '~> 2.14'`
+   - CocoaPods (set `USE_PJSIP_POD=1` and optionally `PJSIP_PODSPEC=https://your.hosted/specs/PJSIP.podspec` before running `pod install --repo-update`)
    - Prebuilt XCFrameworks added to **Frameworks, Libraries, and Embedded Content**
 2. Expose the headers in `YourApp-Bridging-Header.h`:
    ```objc
